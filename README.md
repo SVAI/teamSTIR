@@ -13,12 +13,11 @@ Neurofibromatosis is a rare, debilitating genetic predisposition to cancer that 
 In order to assess tumor burden, response to therapy or progression of disease, volumetric measurements must be taken of tumors all over the body. The gold standard for acquiring these measurements is manual segmentation of MRI images by trained radiologists. However, this process is painstaking, time consuming, and expensive. There are often discrepancies in ground truth segmentations among different raters, institutions and MRI sequences. An automated segmentation method would reduce costs and time required for analysis as well as facilitate an analysis pipeline.
 
 ## Methods
-Our goal was to do binary classification of each pixel as 'tumor' or 'not tumor'. We used a training dataset of 36 patients' MRIs from a single institution with corresponding segmentation masks as ground truth. Preprocessing of DICOMS included masking out label annotations on images, normalizing data from (-1 to 1) (ignoring outliers).
+Our goal was to do binary classification of each pixel as 'tumor' or 'not tumor'. We used a training dataset of 36 patients' MRIs from a single institution with corresponding segmentation masks as ground truth. Preprocessing of DICOMS included masking out label annotations on images and normalizing data from (-1 to 1) (ignoring outliers).
 
 We augmented the data by creating 64 x 64 pixel patches using a 1 pixel stride. There was a drastic class imbalance between tumor and not tumor - tumor pixels comprised only ~0.5% of all the pixels. To address this imbalances, we defined a patch with at least 1 tumor pixel as a 'tumor' class patch and then randomly selected an equal number of non-tumor patches. Because of overlapping augmentation, we had 250 million patches of each class. We randomly subsetted this data for ease of use for 50,000 patches of each type.
 
-Using PyTorch, we trained a Unet architecture 
-
+Using PyTorch, we trained a Unet architecture from @milesial with a batch size of 32 images for 100,000 batches per epoch for 10 epochs. We used an ADAM optimizer to set the learning rate. We used a logistic loss function which was averaged over each pixel.
 
 ## Results *: What did we observe? Figures are great!*
 
