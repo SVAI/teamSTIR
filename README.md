@@ -22,6 +22,7 @@ We augmented the data by creating 64 x 64 pixel patches using a 1 pixel stride. 
 Using PyTorch, we trained a Unet architecture from @milesial with a batch size of 32 images for 100,000 batches per epoch for 10 epochs. We used an ADAM optimizer to set the learning rate. We used a logistic loss function which was averaged over each pixel.
 
 ## Results *: What did we observe? Figures are great!*
+Figure 1.
 
 ## Conclusion/Discussion: 
 
