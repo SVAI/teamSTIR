@@ -50,8 +50,22 @@ Figure 6. Example predictions on patches.
 ### Please make sure you address ALL of the following:
 
 #### *1. What additional data would you like to have*
+A lot of our time was used to scrape the existing data together from synapse. The data are great. More would of course be even better, but the fact that annotations exist that the scans were very similar to each other was very useful.
 
 #### *2. What are the next rational steps?* 
+Many shortcuts were taken in the analysis. Next steps include
+
+- do dimensioning work on the Unet architecture.
+    - are 64x64 patches good? Is 128x128 or 256x256 better? Or just a few images cropped around tumor?
+    - is the number of layers and the size of layers appropriate?
+    - we randomly selected an epoch to be 100000 patches, but there were 25000000 useful ones. probably training on more of them would be better
+
+- the different types of tumor could be detected
+- a conversation with medical professionals would be useful to understand the utility of such approaches in practice:
+    - is full-body detection really useful? This requires very stringent thresholds
+    - maybe local detection and segmentation, informed by the practicioner, is actually more useful?
+    
+
 
 #### *3. What additional tools or pipelines will be needed for those steps?*
 
