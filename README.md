@@ -68,8 +68,12 @@ Many shortcuts were taken in the analysis. Next steps include
 
 
 #### *3. What additional tools or pipelines will be needed for those steps?*
+- We did not exhaust the available resources on google cloud. For a full search of architecture, we might benefit from being able to run tests on many different GPU machines.
+
 
 #### *4. What skills would additional collaborators ideally have?*
+
+- somebody with an exceptional sixth sense for neural network tweaking for complement us very well
 
 ## Reproduction: *How to reproduce the findings!*
 
