@@ -40,8 +40,17 @@ Figure 4.
 Figure 5.
 ![Example 5](https://github.com/SVAI/teamSTIR/blob/master/imex5.png)
 
-Figure 6. Example predictions on patches.
+Figure 6.a. Unthresholded predictions.
 ![Pred 1](https://github.com/SVAI/teamSTIR/blob/master/unthresholded_pred1.png)
+
+Figure 6.b. Thresholded predictions.
+![Pred 2](https://github.com/SVAI/teamSTIR/blob/master/thresholded_pred1.png)
+
+Figure 6.c. Ground truth.
+![Pred 3](https://github.com/SVAI/teamSTIR/blob/master/ground_truth1.png)
+
+Figure 6.d. Ground truth contours on anatomical patch.
+![Pred 4](https://github.com/SVAI/teamSTIR/blob/master/groundtruth_contour_plus_anatomical.png)
 
 
 
