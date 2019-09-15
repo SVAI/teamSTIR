@@ -1,22 +1,13 @@
 # teamSTIR
 
-# GoodDocData -- A Template for Simple and Clear Documentation of Hackathon Analyses!
-
-*adapted from [NCBI-Hackathons/GoodDoc](https://github.com/NCBI-Hackathons/GoodDoc) with some tweaks for analysis-driven projects*
-
-*instructions in italics can be deleted as sections are filled in*
-
-*most fields are optional, Conclusion and Important Resources are required*
+# Automated segmentation of whole body MRI using deep learning segmentation algorithms
 
 ## Please cite our work -- here is the ICMJE Standard Citation:
 
 ### ...and a link to the DOI: *You can make a free DOI with zenodo, synapse, figshare, or other resources <link>*
 
-## Awesome Logo *(if applicable)*
-
-## Website *(if applicable)*
-
-## Abstract *: Summarize everything in a few sentences.* 
+## Abstract 
+Neurofibromatosis is a rare, debilitating genetic predisposition to cancer that results in tumors of the nervous system all over the body. Noninvasive monitoring of disease progress and response to therapy can be achieved through whole body MRI using a STIR acquisition sequence. Segmentation of tumor tissue is required to track tumor burden. Manual segmentation of lesions is painstaking and time consuming, requires trained specialists and often has high intra-rater variability. A fast and accurate automated method would facilitate volumetric analysis, time series tracking and reduce burden on radiologists. Using a synapse dataset of 48 manually segmented NF patient MRIs, we utilize a PyTorch implementation of Unet for pixel-wise segmentation of whole body MRI images. We query whether a T1 sequence can improve accuracy over segmentation using the STIR sequence alone.
 
 ## Introduction *: What's the problem? Why should we solve it?*
 
