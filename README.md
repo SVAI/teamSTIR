@@ -25,6 +25,23 @@ Using PyTorch, we trained a Unet architecture from @milesial with a batch size o
 Figure 1.
 ![Example 1](https://github.com/SVAI/teamSTIR/blob/master/imex1.png)
 
+Figure 2.
+![Example 2](https://github.com/SVAI/teamSTIR/blob/master/imex2.png)
+
+Figure 3.
+![Example 3](https://github.com/SVAI/teamSTIR/blob/master/imex3.png)
+
+Figure 4.
+![Example 4](https://github.com/SVAI/teamSTIR/blob/master/imex4.png)
+
+Figure 5.
+![Example 5](https://github.com/SVAI/teamSTIR/blob/master/imex5.png)
+
+Figure 6. Example predictions on patches.
+![Pred 1](https://github.com/SVAI/teamSTIR/blob/master/unthresholded_pred1.png)
+
+
+
 ## Conclusion/Discussion: 
 
 ### Please make sure you address ALL of the following:
