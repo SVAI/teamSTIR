@@ -21,6 +21,9 @@ We augmented the data by creating 64 x 64 pixel patches using a 1 pixel stride. 
 
 Using PyTorch, we trained a Unet architecture from @milesial with a batch size of 32 images for 100,000 batches per epoch for 10 epochs. We used an ADAM optimizer to set the learning rate. We used a logistic loss function which was averaged over each pixel.
 
+<img src="https://www.researchgate.net/profile/Alan_Jackson9/publication/323597886/figure/fig2/AS:601386504957959@1520393124691/Convolutional-neural-network-CNN-architecture-based-on-UNET-Ronneberger-et-al.png" alt="Image result for unet diagram"/>
+[from researchgate]
+
 ## Results *: What did we observe? Figures are great!*
 Figure 1.
 ![Example 1](https://github.com/SVAI/teamSTIR/blob/master/imex1.png)
