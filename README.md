@@ -1,10 +1,9 @@
 # teamSTIR
 
 # Automated segmentation of whole body MRI using deep learning segmentation algorithms
+Michael Eickenberg, PhD; Amanda Paulson, PhD; Katarina Slama, PhD Candidate, Joe Carlson, PhD
 
-## Please cite our work -- here is the ICMJE Standard Citation:
-
-### ...and a link to the DOI: *You can make a free DOI with zenodo, synapse, figshare, or other resources <link>*
+Slides from our talk at the CTF's NF Conference 2019: https://docs.google.com/presentation/d/1jzv8J13AJjroT9qJaDryHM1RdNtApft5ZMUGcPi9Oi4/edit?usp=sharing
 
 ## Abstract 
 We have evaluated techniques for an automated assay of tumor volume in neurofibromatosis patients through a machine learning algorithm trained on a set of clinical, whole body MRI images. A fast and accurate automated method would facilitate volumetric analysis, time series tracking and reduce burden on radiologists. Using a synapse dataset of 48 manually segmented NF patient MRIs, we utilize a PyTorch implementation of Unet for pixel-wise segmentation of whole body MRI images. We query whether a T1 sequence can improve accuracy over segmentation using the STIR sequence alone.
